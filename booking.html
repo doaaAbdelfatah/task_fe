@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="dist/css/css.css" rel="stylesheet">
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="dist/css/animate.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="dist/css/demo-style.css">
+  <link rel="stylesheet" href="dist/css/parsley.css">
+</head>
+<body onload="booking()">
+  <nav class="navbar navbar-expand-lg demo">
+    <div class="container navbar-container">
+      <a class="navbar-brand" href="#"><img src="dist/images/logo2.png" class="img"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars iconbar"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-0 ml-auto">   
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bars iconbar"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <div class="container">
+                  <div class="row">
+                  <div class="col-sm-2 div_mega"> 
+                      <ul class="list-unstyled">
+                        <li><a href="#">Home Page</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a class="active" href="#">Taining Courses</a></li>
+                        <li><a href="#">Online Booking</a></li>
+                        <li><a href="#">Contact Us</a></li>                        
+                      </ul>
+                  </div>              
+                  <div <div class="col-sm-4 div_country_mega"> 
+                    <div class="row">
+                      <h6>Country</h6>
+                      <div class="col-sm-12">
+                        <label>I Live In</label>
+                        <select>
+                        <option>Egypt</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label>I Speak  &nbsp;</label>
+                        <select>
+                          <option>English</option>
+                        </select>
+                    </div>
+                   
+                         <div class="col-sm-12 form-group-country">
+                        <button type="button" class="product_btn fa-arrow"> Procced  <span class="fa fa-long-arrow-right"></span></button>
+                      </div>
+                    </div>
+                      <div class="row form-group-contact">
+                        <div class="col-md-5">
+                          Get In Touch
+                        </div>
+                        <div class="col-md-7 border-contact">
+                            <ul class="list-unstyled">
+                              <li style="font-weight: bold;"><span class="fa fa-phone text-danger"></span> (+2) 012 2573 8514</li>
+                              <li style="font-size: 8pt;"><span class="fa fa-envelope text-danger"></span> email@comapny.com</li>
+                            </ul>
+                        </div>
+                      </div>
+
+                  </div>
+                  <div <div class="col-sm-3 div_country_mega"> 
+                      <div class="row">
+                        <h6>Partnership</h6>
+                        <div class="col-sm-12">
+                        <p style="text-align: justify; font-size: 8pt;">
+                            A welcome email is the first friendly exchange between your business and a new subscriber.
+                            A welcome email is the first friendly exchange business.
+
+                        </p> 
+                        </div>
+                      </div>
+                      <div class="row form-group-contact">
+                          <div class="col-md-6">
+                           Follow Us
+                          </div>
+                        <div class="col-md-6 border-contact">
+                              <a href="#" class="ml-0 mr-0"><img src="dist/images/social/utube.png" class="img social-media-img"/></a><a href="#" class="ml-0 mr-0"><img src="dist/images/social/fb.png" class="img social-media-img"/></a><a href="#" class="ml-0 mr-0"><img src="dist/images/social/insta.png" class="img social-media-img"/></a><a href="#" class="ml-0 mr-0"><img src="dist/images/social/twt.png" class="img social-media-img"/></a></div>
+                        </div>
+                </div>
+                <div class="col-sm-3 div_country_mega" style="border-right: none;"> 
+                    <div class="row">
+                      <h6>Member Login</h6>
+                      <div class="col-sm-12">
+                        <label>UserName</label>
+                       <input type="text">
+                    </div>
+                    <div class="col-sm-12">
+                        <label>Password</label>
+                       <input type="password">
+                    </div>
+                   
+                      <div class="col-sm-12 form-group-country" style="text-align: right;">
+                        <button type="button" class="product_btn btn-block" style="text-align: right;"> Login  <span class="fa fa-long-arrow-right"></span></button>
+                        <a href="#" style="font-size: 8pt;font-weight: bold; color:rgb(125 ,10 ,15);">Forget Your Password</a>
+                      </div>
+                    </div>
+                      <div class="row form-group-contact">
+                        <div class="col-sm-12">
+                        Not A Member?<br>
+                        <a href="#" style="font-size: 8pt;font-weight: bold; color:rgb(125 ,10 ,15);">Sign Up Now For Free</a>
+                        </div>
+                      </div>
+
+                  </<div>
+              </li>
+            </ul>
+          </li>
+       
+        </ul>
+      </div>
+      <ul class="navbar-nav offcanvas-navbar mr-auto">
+        <li class="nav-item dropdown position-relative">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-shopping-cart "></i>
+            <span id="bag_qty" class="cart-quantity "></span>
+          </a>
+          <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown" id="bag_items">    
+              <li id="btn_booking" style="display: none;">
+                <a  href="booking.html" class="product_btn btn-block" style="text-align: center;">Book Now</a>                
+              </li>       
+              <li id="btn_back" style="display: none;">
+                <a href="products.html" class="product_btn btn-block" style="text-align: center;">Back To Products</a>
+              </li>       
+          </ul>
+        </li>
+        <li class="nav-item">
+                <a href="#" class="nav-link" >العربية</a>
+        </li>     
+      </ul>
+    </div><!-- container -->
+  </nav>
+  <div class="main-wrapper" style="background-image: url('dist/images/banner.png');">
+    <img class="img img-page" src="dist/images/booking.png"/>
+  </div><!-- main-wrapper -->
+  <div class="container">
+      <div class="row booking">
+        <div class="col-sm-12">
+          <h6>Trining Booking</h6>
+        </div>        
+      </div>
+      <div class="row booking">
+          <div class="col-sm-12">
+            <p>Required Courses</p>
+            <hr>
+          </div>        
+      </div>
+      <div id="req_courses" class="row p-2">
+           
+      </div>
+      <hr style="border:solid 0.5px rgba(0, 0, 0, 0.5)">
+      <form data-parsley-validate>
+      <div class="row booking">
+          <div class="col-sm-12">
+           <div class="row">
+             <div class="col-sm-6">
+               <div class="row">
+                 <div class="col-sm-3">
+                <label>Full Name</label>
+                </div>
+                    <div class="col-sm-9"><input type="text" required/>
+                </div> 
+
+             </div>
+           </div>
+           <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-3">
+               <label>Email</label>
+               </div>
+                   <div class="col-sm-9"><input type="email" required/>
+               </div> 
+
+            </div>
+          </div>
+          </div>  
+          <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-sm-3">
+                 <label>Phone</label>
+                 </div>
+                     <div class="col-sm-9"><input type="text" required/>
+                 </div> 
+ 
+              </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="row">
+                 <div class="col-sm-3">
+                <label>Company</label>
+                </div>
+                    <div class="col-sm-9"><input type="text"/>
+                </div> 
+ 
+             </div>
+           </div>
+           </div>   
+           <div class="row">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-12">
+                 <label>Special Request</label>
+                 </div>
+                     <div class="col-sm-12"><input type="text"/>
+                 </div> 
+ 
+              </div>
+            </div>
+     
+           </div>     
+           </div>      
+      </div>
+    
+      <hr style="border:solid 0.4px gray">
+      <div class="row">
+        <div class="col-sm-12">
+            <button  type="submit" class="product_btn" style="text-align: center; padding: 5px 50px;">Book</a> 
+        </div>
+      </div>
+    </form>
+  </div>
+
+     
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="m-1"> &copy; All right reserved designed by Doaa Mohamed Abd Elfatah</p>
+        </div>
+      </div>
+    </div>
+  </footer><!-- footer -->
+  <!--JQuery-->
+  <script src="dist/js/jquery-3.3.1.slim.min.js"></script>
+  <!--Bootstrap js-->
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/custom.js"></script>
+  <script src="dist/js/booking.js"></script>
+  <script src="dist/js/parsley.min.js"></script>
+</body>
+</html>
